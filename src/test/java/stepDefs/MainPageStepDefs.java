@@ -28,9 +28,14 @@ public class MainPageStepDefs {
     mainPage.clickOnLoginButton();
   }
 
-  @When("I select Components -> Monitors in the top menu")
-  public void clickOnMonitorsButton() {
+  @When("I select Components")
+  public void hoverMouseOverComponentsButton() {
     mainPage.getMainMenuBlock().hoverMouseOverComponentsTopMenuButton();
+  }
+
+  @When("I click Monitors in the top menu")
+  public void clickOnMonitorsButton() {
+    mainPage.getMainMenuBlock().clickOnMonitorsTopSubMenuButton();
   }
 
   @When("I click on the Cameras from menu")

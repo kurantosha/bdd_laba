@@ -9,7 +9,7 @@ public class LoginPageStepDefs {
 
   @When("I enter email as {word} and password as {word}")
   public void enterEmailAndPassword(String email, String password) {
-    loginAccountPage.loginOnSite("testing12309862@test.com", "111002299338844");
+    loginAccountPage.loginOnSite(email, password);
   }
 
   @When("I click on login button")
